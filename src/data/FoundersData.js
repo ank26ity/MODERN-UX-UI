@@ -1,5 +1,3 @@
-// src/data/FoundersData.js
-
 import { Sparkles, ArrowRight, Play } from "lucide-react";
 
 const foundersData = {

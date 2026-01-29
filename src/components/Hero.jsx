@@ -25,7 +25,10 @@ export default function Hero() {
       <div
         className="absolute inset-0 opacity-30"
         style={{
-          background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59,130,246,0.15), transparent 40%)`,
+          background: `
+      radial-gradient(300px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59,130,246,1.25), transparent 40%)
+    `,
+    transition: "background 0.2s ease-out",
         }}
       />
 

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import AboutAml from "./components/AboutAml"; // ✅ fixed import
+import AboutAml from "./components/AboutAml";
 import Features from "./components/Features";
 import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
