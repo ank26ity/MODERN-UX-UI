@@ -1,5 +1,32 @@
 @import "tailwindcss";
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease-out forwards;
+}
+
+
+/* Base body styling */
+body {
+  @apply bg-white text-gray-800; /* Light background, dark text */
+}
+
+/* Optional: default link styling */
+a {
+  @apply text-blue-500 hover:text-blue-600;
+}
+
+/* Animations and custom utilities */
 @layer utilities {
   .animate-in {
     animation-fill-mode: both;
@@ -41,23 +68,21 @@
 @keyframes slideInFromBottom {
   from {
     opacity: 0;
-    trasnform: translateY(1rem);
+    transform: translateY(1rem);
   }
-
   to {
     opacity: 1;
-    trasnform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes slideInFromTop {
   from {
     opacity: 0;
-    trasnform: translateY(-1rem);
+    transform: translateY(-1rem);
   }
-
   to {
     opacity: 1;
-    trasnform: translateY(0);
+    transform: translateY(0);
   }
 }
